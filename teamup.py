@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import argparse, yaml, math
+import argparse, yaml, sys
 from itertools import combinations
 
 last_best = 100000000000
@@ -38,8 +38,15 @@ if __name__ == "__main__":
     print(f"There are {len(players)} players assigned teams.")
     
     print("The optimal team assignment is:")
+    i = 0
     for grouping in unique_group(player_skills, args.numteams, args.teamsize):
+        i += 1
+        if i % 100000 == 0:
+            sys.stdout.write('.')
+            sys.stdout.flush()
         if variance(grouping) < last_best:
             last_best = variance(grouping)
+            print("")
             print(f"Variance: {variance(grouping)}")
+            print("============")
             print(grouping)
