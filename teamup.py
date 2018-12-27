@@ -35,9 +35,6 @@ if __name__ == "__main__":
 
     player_skills = {player['name']: player['skill'] for player in players}
 
-    print(f"There are {len(players)} players assigned teams.")
-    
-    print("The optimal team assignment is:")
     i = 0
     for grouping in unique_group(player_skills, args.numteams, args.teamsize):
         i += 1

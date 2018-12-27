@@ -44,8 +44,8 @@ there is a very high correlation between the size of the groups and the optimal
 team up variance. This seems obvious. But I don't know enough math to prove it.
 I simply recommend less, and bigger, teams.
 
-My observation was that, on the same 20 players, I could get (with `variance =
-v`, and `(k, n)`):
+My observation was that, on the same 20 players, I could get (with `v =
+<variance>`, and `(k, n)`):
 
 - `v = 8` with `(10, 2)` after ten or so minutes
 - `v = 5` with `(5, 4)`
