@@ -37,6 +37,22 @@ the difference between the maximum team aggregate skill level and the minimum
 team aggregate skill level. The program will output each new best case as it
 finds smaller levels of variance.
 
+## Notes
+
+From my own anecdotal and thoroughly unscientific observations, it seems like
+there is a very high correlation between the size of the groups and the optimal
+team up variance. This seems obvious. But I don't know enough math to prove it.
+I simply recommend less, and bigger, teams.
+
+My observation was that, on the same 20 players, I could get (with `variance =
+v`, and `(k, n)`:
+
+- `v = 8` with `(10, 2)` after ten or so minutes
+- `v = 5` with `(5, 4)`
+- `v = 1` with `(4, 5)` quickly
+- `v = 0` with `(2, 10)` almost immediately. In fact, the program quit, which
+  doesn't make sense to me.
+
 ### Acknowledgements
 
 This solution is arrived at based on the following resources:
