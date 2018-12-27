@@ -45,7 +45,7 @@ team up variance. This seems obvious. But I don't know enough math to prove it.
 I simply recommend less, and bigger, teams.
 
 My observation was that, on the same 20 players, I could get (with `variance =
-v`, and `(k, n)`:
+v`, and `(k, n)`):
 
 - `v = 8` with `(10, 2)` after ten or so minutes
 - `v = 5` with `(5, 4)`
