@@ -23,10 +23,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser("Optimize teams based on linear programming.")
     parser.add_argument('-p', '--players', required=True, action='store',
             type=str, help="The yaml player file.")
-    parser.add_argument('-k', '--teamsize', required=True, action='store',
-            type=int, help="The size of the teams.")
-    parser.add_argument('-n', '--numteams', required=True, action='store',
+    parser.add_argument('-k', '--numteams', required=True, action='store',
             type=int, help="The number of teams.")
+    parser.add_argument('-n', '--teamsize', required=True, action='store',
+            type=int, help="The size of the teams.")
     args = parser.parse_args()
 
     players = yaml.load(open(args.players, 'rt'))
